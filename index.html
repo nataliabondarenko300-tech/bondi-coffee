@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bondi — Кав'ярня</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Bondi</h1>
+      <p class="tag">Мінімалізм зі смаком</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="menu-section">
+      <h2>Меню</h2>
+      <form id="order-form">
+        <div class="menu-grid" id="menu-grid">
+          <!-- JS will populate menu items here -->
+        </div>
+
+        <div class="summary">
+          <h3>Підсумок замовлення</h3>
+          <div class="totals">
+            <div>Сума: <span id="total-amount">0</span> грн</div>
+          </div>
+          <label class="customer">
+            Ваше ім'я (опціонально)
+            <input type="text" id="customer-name" placeholder="Ім'я">
+          </label>
+          <div class="actions">
+            <button type="button" id="reset-btn" class="btn-light">Очистити</button>
+            <button type="button" id="order-btn" class="btn">Підтвердити замовлення</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="receipt-section" id="receipt-section" aria-live="polite">
+      <!-- Order receipt will appear here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Bondi — Кав'ярня</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
